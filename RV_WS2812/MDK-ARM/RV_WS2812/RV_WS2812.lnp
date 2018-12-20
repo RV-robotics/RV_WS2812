@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"rv_ws2812\startup_stm32f410rx.o"
+"rv_ws2812\rv_ws2812.o"
+"rv_ws2812\main.o"
+"rv_ws2812\stm32f4xx_it.o"
+"rv_ws2812\stm32f4xx_hal_msp.o"
+"rv_ws2812\stm32f4xx_hal_tim.o"
+"rv_ws2812\stm32f4xx_hal_tim_ex.o"
+"rv_ws2812\stm32f4xx_hal_rcc.o"
+"rv_ws2812\stm32f4xx_hal_rcc_ex.o"
+"rv_ws2812\stm32f4xx_hal_flash.o"
+"rv_ws2812\stm32f4xx_hal_flash_ex.o"
+"rv_ws2812\stm32f4xx_hal_flash_ramfunc.o"
+"rv_ws2812\stm32f4xx_hal_gpio.o"
+"rv_ws2812\stm32f4xx_hal_dma_ex.o"
+"rv_ws2812\stm32f4xx_hal_dma.o"
+"rv_ws2812\stm32f4xx_hal_pwr.o"
+"rv_ws2812\stm32f4xx_hal_pwr_ex.o"
+"rv_ws2812\stm32f4xx_hal_cortex.o"
+"rv_ws2812\stm32f4xx_hal.o"
+"rv_ws2812\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "RV_WS2812\RV_WS2812.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RV_WS2812.map" -o RV_WS2812\RV_WS2812.axf
